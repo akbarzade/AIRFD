@@ -14,7 +14,6 @@
 		7AAE19341D27EC9100567D61 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AAE19331D27EC9100567D61 /* CoreData.framework */; };
 		7AAE19361D27EC9500567D61 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AAE19351D27EC9500567D61 /* CoreLocation.framework */; };
 		7AB0DC6B1D27CAC100DD6E2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB0DC6A1D27CAC100DD6E2D /* AppDelegate.swift */; };
-		7AB0DC6D1D27CAC100DD6E2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB0DC6C1D27CAC100DD6E2D /* ViewController.swift */; };
 		7AB0DC701D27CAC100DD6E2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AB0DC6E1D27CAC100DD6E2D /* Main.storyboard */; };
 		7AB0DC751D27CAC100DD6E2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AB0DC741D27CAC100DD6E2D /* Assets.xcassets */; };
 		7AB0DC781D27CAC100DD6E2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AB0DC761D27CAC100DD6E2D /* LaunchScreen.storyboard */; };
@@ -50,7 +49,6 @@
 		7AAE19351D27EC9500567D61 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		7AB0DC671D27CAC100DD6E2D /* AIRFD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIRFD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AB0DC6A1D27CAC100DD6E2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7AB0DC6C1D27CAC100DD6E2D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7AB0DC6F1D27CAC100DD6E2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7AB0DC741D27CAC100DD6E2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AB0DC771D27CAC100DD6E2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -155,7 +153,6 @@
 				7AB0DC9C1D27CB1800DD6E2D /* CoreData */,
 				7AB0DC9B1D27CAD400DD6E2D /* AppConfigurations */,
 				7AB0DC6A1D27CAC100DD6E2D /* AppDelegate.swift */,
-				7AB0DC6C1D27CAC100DD6E2D /* ViewController.swift */,
 				7AB0DC6E1D27CAC100DD6E2D /* Main.storyboard */,
 				7AB0DC741D27CAC100DD6E2D /* Assets.xcassets */,
 				7AB0DC761D27CAC100DD6E2D /* LaunchScreen.storyboard */,
@@ -333,7 +330,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AAE19321D27E9F300567D61 /* MainViewController.swift in Sources */,
-				7AB0DC6D1D27CAC100DD6E2D /* ViewController.swift in Sources */,
 				7AB0DC6B1D27CAC100DD6E2D /* AppDelegate.swift in Sources */,
 				7AAE192A1D27D73500567D61 /* CoreDataHelper.swift in Sources */,
 				7AAE192F1D27E68F00567D61 /* LogHandler.swift in Sources */,
