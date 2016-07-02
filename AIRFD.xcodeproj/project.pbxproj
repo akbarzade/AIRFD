@@ -19,7 +19,6 @@
 		7AB0DC781D27CAC100DD6E2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AB0DC761D27CAC100DD6E2D /* LaunchScreen.storyboard */; };
 		7AB0DC831D27CAC100DD6E2D /* AIRFDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB0DC821D27CAC100DD6E2D /* AIRFDTests.swift */; };
 		7AB0DC8E1D27CAC100DD6E2D /* AIRFDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB0DC8D1D27CAC100DD6E2D /* AIRFDUITests.swift */; };
-		7AB0DC9E1D27CB4100DD6E2D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7AB0DC9D1D27CB4100DD6E2D /* Info.plist */; };
 		7AB0DCA11D27CB5A00DD6E2D /* AIRFD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7AB0DC9F1D27CB5900DD6E2D /* AIRFD.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
@@ -257,21 +256,24 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Akbarzade;
 				TargetAttributes = {
 					7AB0DC661D27CAC100DD6E2D = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = YA8UU6N3JL;
+						LastSwiftMigration = 0800;
 					};
 					7AB0DC7D1D27CAC100DD6E2D = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = YA8UU6N3JL;
+						LastSwiftMigration = 0800;
 						TestTargetID = 7AB0DC661D27CAC100DD6E2D;
 					};
 					7AB0DC881D27CAC100DD6E2D = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = YA8UU6N3JL;
+						LastSwiftMigration = 0800;
 						TestTargetID = 7AB0DC661D27CAC100DD6E2D;
 					};
 				};
@@ -301,7 +303,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AB0DC9E1D27CB4100DD6E2D /* Info.plist in Resources */,
 				7AB0DC781D27CAC100DD6E2D /* LaunchScreen.storyboard in Resources */,
 				7AB0DC751D27CAC100DD6E2D /* Assets.xcassets in Resources */,
 				7AB0DC701D27CAC100DD6E2D /* Main.storyboard in Resources */,
@@ -426,7 +427,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -466,7 +467,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -483,6 +484,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.akbarzade.AIRFD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -495,6 +497,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.akbarzade.AIRFD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -506,6 +510,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.akbarzade.AIRFDTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AIRFD.app/AIRFD";
 			};
 			name = Debug;
@@ -518,6 +523,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.akbarzade.AIRFDTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AIRFD.app/AIRFD";
 			};
 			name = Release;
@@ -529,6 +536,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.akbarzade.AIRFDUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = AIRFD;
 			};
 			name = Debug;
@@ -540,6 +548,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.akbarzade.AIRFDUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = AIRFD;
 			};
 			name = Release;

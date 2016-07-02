@@ -15,9 +15,9 @@ class CoreDataStore: NSObject {
     let storeName = "AIRFD"
     let storeFilename = "AIRFD.sqlite"
     
-    lazy var applicationDocumentsDirectory: NSURL = {
+    lazy var applicationDocumentsDirectory: URL = {
         // The directory the application uses to store the Core Data store file. This code uses a directory named "com.akbarzade.IRAirportDB" in the application's documents Application Support directory.
-        let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
+        let urls = FileManager.default().urlsForDirectory(.documentDirectory, inDomains: .userDomainMask)
         return urls[urls.count-1]
     }()
     
@@ -25,18 +25,18 @@ class CoreDataStore: NSObject {
         // The managed object model for the application. This property is not optional. It is a fatal error for the application not to be able to find and load its model.
         // Changed to ...
         //    let modelURL = NSBundle.mainBundle().URLForResource("IRAirportDB", withExtension: "momd")!
-        let modelURL = NSBundle.mainBundle().URLForResource(self.storeName, withExtension: "momd")!
-        return NSManagedObjectModel(contentsOfURL: modelURL)!
+        let modelURL = Bundle.main().urlForResource(self.storeName, withExtension: "momd")!
+        return NSManagedObjectModel(contentsOf: modelURL)!
     }()
     
     lazy var persistentStoreCoordinator: NSPersistentStoreCoordinator = {
         // The persistent store coordinator for the application. This implementation creates and returns a coordinator, having added the store for the application to it. This property is optional since there are legitimate error conditions that could cause the creation of the store to fail.
         // Create the coordinator and store
         let coordinator = NSPersistentStoreCoordinator(managedObjectModel: self.managedObjectModel)
-        let url = self.applicationDocumentsDirectory.URLByAppendingPathComponent(self.storeFilename)
+        let url = try! self.applicationDocumentsDirectory.appendingPathComponent(self.storeFilename)
         var failureReason = "There was an error creating or loading the application's saved data."
         do {
-            try coordinator.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: url, options: nil)
+            try coordinator.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: url, options: nil)
         } catch {
             // Report any error we got.
             var dict = [String: AnyObject]()

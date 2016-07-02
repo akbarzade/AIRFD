@@ -13,7 +13,7 @@ struct LogHandler {
     
     static var CallCount: [String: Int] = [String: Int]()
     
-    static func Log(funcName: String = #function){
+    static func Log(_ funcName: String = #function){
         if self.CallCount[funcName] == nil {
             self.CallCount[funcName] = 1
         } else if let oldCallCount =  self.CallCount[funcName] {
